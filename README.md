@@ -12,7 +12,7 @@ This document provides a detailed description of the comparative algorithms and 
 
 **NLR.** NLR focuses on noisy label removal for partial multi-label learning. It identifies and removes false-positive labels from the candidate label set while exploiting the remaining reliable label information for model learning. This makes it suitable for PML scenarios where observed candidate labels may contain substantial noise. Its parameters are set as $\beta=10$, $\gamma=10$, and $\lambda=2$.
 
-**PML-LRS.** PMFS-LRS integrates label disambiguation and feature selection into a unified framework by decomposing the candidate label matrix into low-rank ground-truth and sparse noisy components, while exploiting local label correlations through manifold regularization. Its parameters $\alpha$, $\beta$, and $\gamma$ are tuned within $\\{0.001, 0.01, \ldots, 1000\\}$ to achieve optimal performance.
+**PMFS-LRS.** PMFS-LRS integrates label disambiguation and feature selection into a unified framework by decomposing the candidate label matrix into low-rank ground-truth and sparse noisy components, while exploiting local label correlations through manifold regularization. Its parameters $\alpha$, $\beta$, and $\lambda$ are tuned within $\\{0.001, 0.01, \ldots, 1000\\}$ to achieve optimal performance.
 
 **PML-FSLA.** PML-FSLA reconsiders feature structure information and latent space alignment in partial multi-label feature selection. It aligns the feature and label spaces in a latent representation while preserving feature structure information, so that discriminative features can be selected under ambiguous partial multi-label supervision. Its parameters are set as $\alpha=100$, $\beta=1$, and $\gamma=10$.
 
